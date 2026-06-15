@@ -39,7 +39,7 @@ namespace eCommerce.SharedLibrary.DependencyInjection
             app.UseMiddleware<GlobalException>();
 
             //Refister middleware to block all outshiders API calls
-            app.UseMiddleware<ListenToOnlyApiGateway> ();
+            //app.UseMiddleware<ListenToOnlyApiGateway> ();
             return app;
         }
     }
