@@ -1,0 +1,14 @@
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace OrderApi.Application.DTOs
+{
+    public record AppUserDTO(
+        int Id,
+        [Required] string Name,
+        [Required] string TelephoneNumber,
+        [Required] string Address,
+        [Required, EmailAddress] string Email,
+        [Required] string password,
+        [Required] string Role);
+}
