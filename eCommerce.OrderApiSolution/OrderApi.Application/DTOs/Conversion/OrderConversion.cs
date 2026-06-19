@@ -19,8 +19,8 @@ namespace OrderApi.Application.DTOs.Conversion
             {
                 var singleOrder = new OrderDTO(
                     order!.Id,
-                    order!.ClientId,
                     order.ProductId,
+                    order!.ClientId,
                     order.PurchaseQuantity,
                     order.OrderedDate);
                 return (singleOrder, null);
